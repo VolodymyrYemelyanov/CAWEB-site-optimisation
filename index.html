@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobConnect</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/0f3ae856c0.js"></script>
+</head>
+
+<body>
+  <!-- <div class="navigationMobile">
+      <input
+        type="checkbox"
+        class="navigationMobile__checkbox"
+        id="navi-toggle"
+      />
+      <label for="navi-toggle" class="navigationMobile__button">
+        <span class="navigationMobile__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigationMobile__background">&nbsp;</div>
+
+      <nav class="navigationMobile__nav">
+        <ul class="navigationMobile__list">
+          <li class="navigationMobile__item">
+            <a href="#" class="navigationMobile__link"
+              ><span>01</span>About us</a
+            >
+          </li>
+          <li class="navigationMobile__item">
+            <a href="#" class="navigationMobile__link"
+              ><span>02</span>Executors</a
+            >
+          </li>
+          <li class="navigationMobile__item">
+            <a href="#" class="navigationMobile__link"
+              ><span>03</span>Advices</a
+            >
+          </li>
+          <li class="navigationMobile__item">
+            <a href="#" class="navigationMobile__link"
+              ><span>04</span>News</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div> -->
+
+  <header class="header">
+    <div class="header__text-box">
+      <h1 class="header__heading">
+        <span class="header__heading-main">
+          Quality work in your language
+        </span>
+        <span class="header__heading-sub">
+          JobConnect can help you to find needed specialist
+        </span>
+      </h1>
+      <div class="header-form">
+        <form action="#" class="form">
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Search Keywords" id="name" required />
+            <label for="name" class="form__label">Search Keywords</label>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="All specialists" id="specialists" required />
+            <label for="specialists" class="form__label">
+              All specialists
+            </label>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="All Location" id="location" required />
+            <label for="location" class="form__label">All Location</label>
+          </div>
+          <div class="form__group form__btn">
+            <button type="submit" id="sendForm" class="btn btn__header">
+              Find Spec
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <div class="navigation">
+    <div class="navigation__container">
+      <div class="logo">JobConnect</div>
+      <div class="navigation__nav">
+        <nav class="navigation__desktop">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">About us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">Executors</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">Advices</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link">News</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navigation__btn">
+          <a href="#" class="btn btn__join btn__link"><span>Join Us</span></a>
+        </div>
+        <div class="navigation__btn">
+          <a href="#" class="btn btn__sign btn__link"><span>Sign In</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section-job-categories">
+      <div class="u-center-text u-margin-bottom-medium">
+        <h2 class="heading-secondary">Over 1,500,000 artiste</h2>
+        <p>Ready to help you with your tasks</p>
+      </div>
+      <div class="job-categories-wrapper">
+        <div class="job-category">
+          <div class="job-category__img-text">
+            <img src="./img/icons/car.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Vehicle repair</span></a>
+              <span class="job-category__text-sub">2 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category">
+          <div class="job-category__img-text">
+            <img src="./img/icons/design.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Design</span></a>
+              <span class="job-category__text-sub">3 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category">
+          <div class="job-category__img-text">
+            <img src="./img/icons/help.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Health and beauty</span></a>
+              <span class="job-category__text-sub">6 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category">
+          <div class="job-category__img-text">
+            <img src="./img/icons/photo.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Photo and video services</span></a>
+              <span class="job-category__text-sub">4 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category">
+          <div class="job-category__img-text">
+            <img src="./img/icons/teacher.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Tutors and training</span></a>
+              <span class="job-category__text-sub">3 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category">
+          <div class="job-category__img-text">
+            <img src="./img/icons/tourism.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Courier services</span></a>
+              <span class="job-category__text-sub">4 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category">
+          <div class="job-category__img-text">
+            <img src="./img/icons/track.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Сargo transportation</span></a>
+              <span class="job-category__text-sub">4 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category">
+          <div class="job-category__img-text">
+            <img src="./img/icons/virtual.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Сleaning</span></a>
+              <span class="job-category__text-sub">4 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category job-category-hidden">
+          <div class="job-category__img-text">
+            <img src="./img/icons/car.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Vehicle repair</span></a>
+              <span class="job-category__text-sub">2 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category job-category-hidden">
+          <div class="job-category__img-text">
+            <img src="./img/icons/design.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Design</span></a>
+              <span class="job-category__text-sub">3 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category job-category-hidden">
+          <div class="job-category__img-text">
+            <img src="./img/icons/help.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Health and beauty</span></a>
+              <span class="job-category__text-sub">6 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category job-category-hidden">
+          <div class="job-category__img-text">
+            <img src="./img/icons/photo.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Photo and video services</span></a>
+              <span class="job-category__text-sub">4 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category job-category-hidden">
+          <div class="job-category__img-text">
+            <img src="./img/icons/teacher.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Tutors and training</span></a>
+              <span class="job-category__text-sub">3 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category job-category-hidden">
+          <div class="job-category__img-text">
+            <img src="./img/icons/tourism.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Courier services</span></a>
+              <span class="job-category__text-sub">4 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category job-category-hidden">
+          <div class="job-category__img-text">
+            <img src="./img/icons/track.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Сargo transportation</span></a>
+              <span class="job-category__text-sub">4 jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-category job-category-hidden">
+          <div class="job-category__img-text">
+            <img src="./img/icons/virtual.png" alt="Job Category Image" class="img" />
+            <div class="job-category__text">
+              <a href="#"><span>Сleaning</span></a>
+              <span class="job-category__text-sub">4 jobs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-job-category">
+        <span>See more</span>
+      </button>
+    </section>
+
+    <section class="section-news">
+      <div class="u-margin-bottom-medium u-center-text">
+        <h2 class="heading-secondary">Latest News</h2>
+      </div>
+      <div class="news-wrapper">
+        <div class="news norm">
+          <div class="news__text-wrap">
+            <p class="news__admin"><span>admin</span></p>
+            <h3 class="heading-third"><a href="#">C-19 is over</a></h3>
+            <p class="news__text">
+              Congratulation Corona-virus is over. Ravenously while stridently
+              coughed far promiscuously below jeez much yikes bland that
+              salamander cunningly..
+            </p>
+            <div class="social-date">
+              <div class="news__social">
+                <a href="" target="_blank" class="social-button btn-fb">
+                  <span></span>
+                </a>
+                <a href="" target="_blank" class="social-button btn-tw">
+                  <span></span>
+                </a>
+                <a href="" target="_blank" class="social-button btn-mail">
+                  <span></span>
+                </a>
+              </div>
+              <div class="news__date">
+                <i class="far fa-calendar-alt"></i><span>June 23, 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__img">
+            <!-- <img src="./img/news1.jpg" alt="" /> -->
+          </div>
+        </div>
+        <div class="news norm">
+          <div class="news__text-wrap">
+            <p class="news__admin"><span>admin</span></p>
+            <h3 class="heading-third">
+              <a href="#">Politics became resonable</a>
+            </h3>
+            <p class="news__text">
+              Congratulation Corona-virus is over. Ravenously while stridently
+              coughed far promiscuously below jeez much yikes bland that
+              salamander cunningly..
+            </p>
+            <div class="social-date">
+              <div class="news__social">
+                <a href="" target="_blank" class="social-button btn-fb">
+                  <span></span>
+                </a>
+                <a href="" target="_blank" class="social-button btn-tw">
+                  <span></span>
+                </a>
+                <a href="" target="_blank" class="social-button btn-mail">
+                  <span></span>
+                </a>
+              </div>
+              <div class="news__date">
+                <i class="far fa-calendar-alt"></i><span>June 23, 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__img">
+            <!-- <img src="./img/news2.jpg" alt="" /> -->
+          </div>
+        </div>
+        <div class="news norm low">
+          <div class="news__text-wrap">
+            <p class="news__admin"><span>admin</span></p>
+            <h3 class="heading-third"><a href="#">C-19 is over</a></h3>
+            <p class="news__text">
+              Congratulation Corona-virus is over. Ravenously while stridently
+              coughed far promiscuously below jeez much yikes bland that
+              salamander cunningly..
+            </p>
+            <div class="social-date">
+              <div class="news__social">
+                <a href="" target="_blank" class="social-button btn-fb">
+                  <span></span>
+                </a>
+                <a href="" target="_blank" class="social-button btn-tw">
+                  <span></span>
+                </a>
+                <a href="" target="_blank" class="social-button btn-mail">
+                  <span></span>
+                </a>
+              </div>
+              <div class="news__date">
+                <i class="far fa-calendar-alt"></i><span>June 23, 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__img">
+            <!-- <img src="./img/news3.jpg" alt="" /> -->
+          </div>
+        </div>
+        <div class="news norm low">
+          <div class="news__text-wrap">
+            <p class="news__admin"><span>admin</span></p>
+            <h3 class="heading-third"><a href="#">C-19 is over</a></h3>
+            <p class="news__text">
+              Congratulation Corona-virus is over. Ravenously while stridently
+              coughed far promiscuously below jeez much yikes bland that
+              salamander cunningly..
+            </p>
+            <div class="social-date">
+              <div class="news__social">
+                <a href="" target="_blank" class="social-button btn-fb">
+                  <span></span>
+                </a>
+                <a href="" target="_blank" class="social-button btn-tw">
+                  <span></span>
+                </a>
+                <a href="" target="_blank" class="social-button btn-mail">
+                  <span></span>
+                </a>
+              </div>
+              <div class="news__date">
+                <i class="far fa-calendar-alt"></i><span>June 23, 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__img">
+            <!-- <img src="./img/news3.jpg" alt="" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-advantages">
+      <div class="u-margin-bottom-medium u-center-text">
+        <h2 class="heading-secondary">Why Choose JobConnect</h2>
+      </div>
+      <div class="advantages">
+        <div class="advantage">
+          <figure class="advantage__shape">
+            <img src="./img/nat-1.jpg" alt="Nature" class="advantage__img" />
+            <figcaption class="advantage__caption">secure payment</figcaption>
+          </figure>
+          <div class="advantage__description">
+            <h3 class="heading-third u-margin-top-medium advantage__title">
+              <a href="#">Convenient and secure payment</a>
+            </h3>
+            <p>
+              Lorem, ipsum dolor sit quos debitis officia temporibus iste quas
+              molestias commodi. Lorem, ipsum dolor sit quos debitis officia
+              temporibus iste quas molestias commodi.
+            </p>
+          </div>
+        </div>
+        <div class="advantage">
+          <figure class="advantage__shape">
+            <img src="./img/nat-2.jpg" alt="Nature" class="advantage__img" />
+            <figcaption class="advantage__caption">
+              solid performers
+            </figcaption>
+          </figure>
+          <div class="advantage__description">
+            <h3 class="heading-third u-margin-top-medium advantage__title">
+              <a href="#">Solid Performers</a>
+            </h3>
+            <p>
+              Lorem, ipsum dolor sit quos debitis officia temporibus iste quas
+              molestias commodi.
+            </p>
+          </div>
+        </div>
+        <div class="advantage">
+          <figure class="advantage__shape">
+            <img src="./img/nat-3.jpg" alt="Nature" class="advantage__img" />
+            <figcaption class="advantage__caption">
+              reliable comments
+            </figcaption>
+          </figure>
+          <div class="advantage__description">
+            <h3 class="heading-third u-margin-top-medium advantage__title">
+              <a href="#">Reliable Comments</a>
+            </h3>
+            <p>
+              Lorem, ipsum dolor sit quos debitis officia temporibus iste quas
+              molestias commodi.
+            </p>
+          </div>
+        </div>
+        <div class="advantage">
+          <figure class="advantage__shape">
+            <img src="./img/nat-3.jpg" alt="Nature" class="advantage__img" />
+            <figcaption class="advantage__caption">
+              jc for business
+            </figcaption>
+          </figure>
+          <div class="advantage__description">
+            <h3 class="heading-third u-margin-top-medium advantage__title">
+              <a href="#">JobConnect for business</a>
+            </h3>
+            <p>
+              Lorem, ipsum dolor sit quos debitis officia temporibus iste quas
+              molestias commodi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__mainInfo">
+      <div class="logo footer__logo">JobConnect</div>
+      <div class="footer__contact">
+        <p>27, Promenade des Anglais</p>
+        <p>06300 Nice</p>
+        <p>info@jobconnect.com</p>
+      </div>
+      <div class="footer__faq">
+        <h3 class="footer__heading">Frequently asked questions</h3>
+        <p class="footer__faq-question">
+          <span>Lorem, ipsum dolor sit?</span>
+        </p>
+        <p class="footer__faq-question"><span>Quos debitis?</span></p>
+        <p class="footer__faq-question"><span>Officia temporibus?</span></p>
+        <p class="footer__faq-question">
+          <span>iste quas molestias commodi?</span>
+        </p>
+      </div>
+      <div class="footer__newsLetter">
+        <h3 class="footer__heading">Newsletter</h3>
+        <div class="form">
+          <p>
+            We may send you information about events, products and services
+            which we about related
+          </p>
+          <form action="#">
+            <input type="email" placeholder="" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>
+        Done by Volodymyr Yemelyanov for "Conception d'un site web mobile" courses. Copyright &copy; 2020 by V.Y.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

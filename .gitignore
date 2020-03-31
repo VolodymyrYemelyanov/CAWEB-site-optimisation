@@ -1,0 +1,11 @@
+# Ignore node modules.
+node_modules
+
+# Ignore scss files.
+scss
+
+# Ignore gulp.
+gulpfile.js
+
+# Ignore macOS operation files.
+**/*.DS_Store*
