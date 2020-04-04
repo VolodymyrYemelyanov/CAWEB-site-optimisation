@@ -58,6 +58,9 @@ section {
   .heading-third a:hover {
     color: #b22222; }
 
+.text-center {
+  text-align: center; }
+
 .header {
   padding-top: 190px;
   padding-bottom: 280px;
@@ -104,8 +107,10 @@ section {
       .header-form {
         padding: 10px; } }
 
+.navigation-background {
+  background-color: #008fa5; }
+
 .navigation {
-  position: absolute;
   top: 0;
   max-width: 1800px;
   width: 100%;
@@ -141,6 +146,12 @@ section {
       .navigation .logo {
         font-size: 24px;
         width: 32%; } }
+    .navigation .logo a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.4s; }
+      .navigation .logo a:hover {
+        color: rgba(255, 255, 255, 0.75); }
   .navigation__nav {
     display: flex;
     width: 80%;
@@ -173,6 +184,11 @@ section {
   .navigation__btn {
     display: flex;
     align-items: center; }
+
+.currentLink {
+  color: rgba(255, 255, 255, 0.5); }
+  .currentLink:hover {
+    background-color: transparent; }
 
 .navigationMobile {
   display: none; }
@@ -497,7 +513,8 @@ section {
 .job-categories-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px; }
+  grid-gap: 15px;
+  margin-top: 15px; }
   @media (max-width: 900px) {
     .job-categories-wrapper {
       grid-template-columns: repeat(3, 1fr); } }
@@ -776,6 +793,126 @@ section {
   background-color: #e2887c; }
   .btn-mail:hover span::before {
     color: #ffffff; }
+
+#map {
+  max-width: 700px;
+  width: 100%;
+  height: 500px;
+  background: grey;
+  margin: 50px auto; }
+
+.popUp {
+  position: relative;
+  z-index: 999; }
+  .popUp__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .popUp__window {
+    width: 600px;
+    background-color: #ffffff;
+    border-radius: 4px; }
+  .popUp__header {
+    display: flex;
+    background-color: #f5f6f7;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-bottom: 1px solid #eee; }
+  .popUp__header-close {
+    color: #a9a9a9;
+    cursor: pointer;
+    font-size: 22px;
+    display: inline-block;
+    width: 19px; }
+    .popUp__header-close:hover {
+      color: #828282; }
+  .popUp__body {
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap; }
+  .popUp .social-button-wrap {
+    text-align: center;
+    width: 50%; }
+  .popUp__btn {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    padding: 7px;
+    text-align: center;
+    border: 5px solid;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s; }
+    .popUp__btn:not(:last-child) {
+      margin-bottom: 10px; }
+    .popUp__btn span::before {
+      font-size: 25px;
+      font-family: FontAwesome; }
+  .popUp__btn-fb {
+    background-color: #3b5998;
+    border-color: #3b5998; }
+    .popUp__btn-fb:hover {
+      background-color: #fff;
+      color: #3b5998; }
+  .popUp__btn-tw {
+    background-color: #00aae4;
+    border-color: #00aae4; }
+    .popUp__btn-tw:hover {
+      background-color: #fff;
+      color: #00aae4; }
+  .popUp__btn-mail {
+    background-color: #fff;
+    border-color: #dfdfdf;
+    color: #332c2c; }
+    .popUp__btn-mail:hover {
+      border-color: #332c2c; }
+  .popUp .form {
+    width: 50%;
+    text-align: center; }
+    .popUp .form h3 {
+      width: 100%; }
+  .popUp__footer {
+    border-top: 1px solid #eee;
+    padding: 10px 10px;
+    text-align: right; }
+    .popUp__footer .btn {
+      border-radius: 4px; }
+
+.hide-popUp {
+  display: none; }
+
+.creators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.creator {
+  position: relative;
+  height: 520px;
+  width: 40%; }
+  .creator__side {
+    height: 520px;
+    transition: all .8s;
+    font-size: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); }
 
 .u-center-text {
   text-align: center; }

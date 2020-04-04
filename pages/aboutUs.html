@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0f3ae856c0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="navigationMobile">
+        <input type="checkbox" class="navigationMobile__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigationMobile__button">
+            <span class="navigationMobile__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigationMobile__background">&nbsp;</div>
+
+        <nav class="navigationMobile__nav">
+            <ul class="navigationMobile__list">
+                <li class="navigationMobile__item">
+                    <a href="#" class="navigationMobile__link"><span>01</span>Home</a>
+                </li>
+                <li class="navigationMobile__item">
+                    <a href="./pages/aboutUs.html" class="navigationMobile__link"><span>02</span>About us</a>
+                </li>
+                <li class="navigationMobile__item">
+                    <a href="./pages/executors.html" class="navigationMobile__link"><span>03</span>Executors</a>
+                </li>
+                <!-- <li class="navigationMobile__item">
+                <a href="#" class="navigationMobile__link"
+                  ><span>03</span>Advices</a
+                >
+              </li> -->
+                <li class="navigationMobile__item">
+                    <a href="./pages/news.html" class="navigationMobile__link">
+                        <span>04</span>News</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="navigation-background">
+        <div class="navigation">
+            <div class="navigation__container">
+                <div class="logo"><a href="../index.html"><span>Job</span><span>Connect</span></a></div>
+                <div class="navigation__nav">
+                    <nav class="navigation__desktop">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="../index.html" class="navigation__link link">Home</a>
+                            </li>
+                            <li class="navigation__item navigation__link link currentLink">
+                                About Us
+                            </li>
+                            <li class="navigation__item">
+                                <a href="./executors.html" class="navigation__link link">Executors</a>
+                            </li>
+                            <!-- <li class="navigation__item">
+                      <a href="#" class="navigation__link link">Advices</a>
+                    </li> -->
+                            <li class="navigation__item">
+                                <a href="./news.html" class="navigation__link link">News</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="navigation__btn">
+                        <button class="btn btn__join btn__link">
+                            <span>Join Us</span>
+                        </button>
+                    </div>
+                    <div class="navigation__btn">
+                        <button class="btn btn__sign btn__link">
+                            <span>Sign In</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="section-creators">
+            <h2 class="heading-secondary text-center u-margin-bottom-medium">Creators</h2>
+            <div class="creators">
+                <div class="creator">
+                    <div class="creator__side creator__front">
+                        <img src="" alt="">
+                        <h3>Vlad</h3>
+                    </div>
+                    <div class="creator__side creator__back creator__back-vlad">
+
+                    </div>
+                </div>
+                <div class="creator">
+                    <div class="creator__side creator__front">
+                        <img src="" alt="">
+                        <h3>Alina</h3>
+                    </div>
+                    <div class="creator__side creator__back creator__back-alina"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-location">
+            <div class="location">
+                <p> You can find ous next to Westminster hotel in Nice</p>
+            </div>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__mainInfo">
+            <div class="footer__contact">
+                <h4 class="logo footer__logo">JobConnect</h4>
+                <p>27, Promenade des Anglais</p>
+                <p>06300 Nice</p>
+                <p>info@jobconnect.com</p>
+            </div>
+            <div class="footer__faq">
+                <h3 class="footer__heading">Frequently asked questions</h3>
+                <p class="footer__faq-question">
+                    <span>Lorem, ipsum dolor sit?</span>
+                </p>
+                <p class="footer__faq-question"><span>Quos debitis?</span></p>
+                <p class="footer__faq-question"><span>Officia temporibus?</span></p>
+                <p class="footer__faq-question">
+                    <span>iste quas molestias commodi?</span>
+                </p>
+            </div>
+            <div class="footer__newsLetter">
+                <h3 class="footer__heading">Newsletter</h3>
+                <div class="form">
+                    <p>
+                        We may send you information about events, products and services
+                        which we about related
+                    </p>
+                    <form action="#">
+                        <input type="email" placeholder="" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div><span></span></div>
+        <div class="footer__copyright">
+            <p>
+                Done by Volodymyr Yemelyanov for "Conception d'un site web mobile"
+                courses. Copyright &copy; 2020 by V.Y.
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi2Zr2mUv0_WbGV0OQ6QbbO0RU-EmupHk&callback=initMap"
+        type="text/javascript"></script>
+</body>
+
+</html>

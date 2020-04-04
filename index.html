@@ -9,36 +9,102 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/0f3ae856c0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
-  <header class="header">
-    <div class="navigationMobile">
-      <input type="checkbox" class="navigationMobile__checkbox" id="navi-toggle" />
-      <label for="navi-toggle" class="navigationMobile__button">
-        <span class="navigationMobile__icon">&nbsp;</span>
-      </label>
 
-      <div class="navigationMobile__background">&nbsp;</div>
-
-      <nav class="navigationMobile__nav">
-        <ul class="navigationMobile__list">
-          <li class="navigationMobile__item">
-            <a href="#" class="navigationMobile__link"><span>01</span>About us</a>
-          </li>
-          <li class="navigationMobile__item">
-            <a href="#" class="navigationMobile__link"><span>02</span>Executors</a>
-          </li>
-          <li class="navigationMobile__item">
-            <a href="#" class="navigationMobile__link"><span>03</span>Advices</a>
-          </li>
-          <li class="navigationMobile__item">
-            <a href="#" class="navigationMobile__link"><span>04</span>News</a>
-          </li>
-        </ul>
-      </nav>
+  <div id="popUp" class="popUp hide-popUp">
+    <div class="popUp__overlay">
+      <div class="popUp__window">
+        <div class="popUp__header">
+          <span class="pouUp__title">Join us</span>
+          <span class="popUp__close popUp__header-close">&times;</span>
+        </div>
+        <div class="popUp__body">
+          <div class="social-button-wrap">
+            <h3 class="u-margin-bottom-small">Join us with:</h3>
+            <a href="#" target="_blank" class="popUp__btn popUp__btn-fb"><span>Facebook</span></a>
+            <a href="#" target="_blank" class="popUp__btn popUp__btn-tw"><span>Tweeter</span></a>
+            <a href="#" target="_blank" class="popUp__btn popUp__btn-mail"><span>Gmail</span></a>
+          </div>
+          <div class="form">
+            <h3 class="u-margin-bottom-small">Or sing in the form:</h3>
+          </div>
+        </div>
+        <div class="popUp__footer">
+          <button class="btn popUp__close">Ok</button>
+          <button class="btn popUp__close">Cansel</button>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <div class="navigationMobile">
+    <input type="checkbox" class="navigationMobile__checkbox" id="navi-toggle" />
+    <label for="navi-toggle" class="navigationMobile__button">
+      <span class="navigationMobile__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigationMobile__background">&nbsp;</div>
+
+    <nav class="navigationMobile__nav">
+      <ul class="navigationMobile__list">
+        <li class="navigationMobile__item">
+          <a href="#" class="navigationMobile__link"><span>01</span>Home</a>
+        </li>
+        <li class="navigationMobile__item">
+          <a href="./pages/aboutUs.html" class="navigationMobile__link"><span>02</span>About us</a>
+        </li>
+        <li class="navigationMobile__item">
+          <a href="./pages/executors.html" class="navigationMobile__link"><span>03</span>Executors</a>
+        </li>
+        <li class="navigationMobile__item">
+          <a href="./pages/news.html" class="navigationMobile__link">
+            <span>04</span>News</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="navigation-background">
+    <div class="navigation">
+      <div class="navigation__container">
+        <div class="logo"><a href="../index.html"><span>Job</span><span>Connect</span></a></div>
+        <div class="navigation__nav">
+          <nav class="navigation__desktop">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__link link currentLink">
+                Home
+              </li>
+              <li class="navigation__item">
+                <a href="./pages/aboutUs.html" class="navigation__link link">About us</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./pages/executors.html" class="navigation__link link">Executors</a>
+              </li>
+              <li class="navigation__item">
+                <a href="./pages/news.html" class="navigation__link link">News</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="navigation__btn">
+            <button class="btn btn__join btn__link">
+              <span>Join Us</span>
+            </button>
+          </div>
+          <div class="navigation__btn">
+            <button class="btn btn__sign btn__link">
+              <span>Sign In</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
     <div class="header__text-box">
       <h1 class="header__heading">
         <span class="header__heading-main">
@@ -55,9 +121,9 @@
             <label for="name" class="form__label">Search Keywords</label>
           </div>
           <div class="form__group">
-            <input type="text" class="form__input" placeholder="All specialists" id="specialists" required />
+            <input type="text" class="form__input" placeholder="All Specialists" id="specialists" required />
             <label for="specialists" class="form__label">
-              All specialists
+              All Specialists
             </label>
           </div>
           <div class="form__group">
@@ -73,36 +139,6 @@
       </div>
     </div>
   </header>
-
-  <div class="navigation">
-    <div class="navigation__container">
-      <div class="logo"><span>Job</span><span>Connect</span></div>
-      <div class="navigation__nav">
-        <nav class="navigation__desktop">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link link">About us</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link link">Executors</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link link">Advices</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link link">News</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="navigation__btn">
-          <a href="#" class="btn btn__join btn__link"><span>Join Us</span></a>
-        </div>
-        <div class="navigation__btn">
-          <a href="#" class="btn btn__sign btn__link"><span>Sign In</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <main>
     <section class="section-job-categories">
@@ -183,7 +219,9 @@
             </div>
           </div>
         </div>
-        <div class="job-category job-category-hidden">
+      </div>
+      <div id="job-category-hidden" class="job-categories-wrapper job-category-hidden">
+        <div class="job-category">
           <div class="job-category__img-text">
             <img src="./img/icons/car.png" alt="Job Category Image" class="img" />
             <div class="job-category__text">
@@ -192,7 +230,7 @@
             </div>
           </div>
         </div>
-        <div class="job-category job-category-hidden">
+        <div class="job-category">
           <div class="job-category__img-text">
             <img src="./img/icons/design.png" alt="Job Category Image" class="img" />
             <div class="job-category__text">
@@ -201,7 +239,7 @@
             </div>
           </div>
         </div>
-        <div class="job-category job-category-hidden">
+        <div class="job-category">
           <div class="job-category__img-text">
             <img src="./img/icons/help.png" alt="Job Category Image" class="img" />
             <div class="job-category__text">
@@ -210,7 +248,7 @@
             </div>
           </div>
         </div>
-        <div class="job-category job-category-hidden">
+        <div class="job-category">
           <div class="job-category__img-text">
             <img src="./img/icons/photo.png" alt="Job Category Image" class="img" />
             <div class="job-category__text">
@@ -219,7 +257,7 @@
             </div>
           </div>
         </div>
-        <div class="job-category job-category-hidden">
+        <div class="job-category">
           <div class="job-category__img-text">
             <img src="./img/icons/teacher.png" alt="Job Category Image" class="img" />
             <div class="job-category__text">
@@ -228,7 +266,7 @@
             </div>
           </div>
         </div>
-        <div class="job-category job-category-hidden">
+        <div class="job-category">
           <div class="job-category__img-text">
             <img src="./img/icons/tourism.png" alt="Job Category Image" class="img" />
             <div class="job-category__text">
@@ -237,7 +275,7 @@
             </div>
           </div>
         </div>
-        <div class="job-category job-category-hidden">
+        <div class="job-category">
           <div class="job-category__img-text">
             <img src="./img/icons/track.png" alt="Job Category Image" class="img" />
             <div class="job-category__text">
@@ -246,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="job-category job-category-hidden">
+        <div class="job-category">
           <div class="job-category__img-text">
             <img src="./img/icons/virtual.png" alt="Job Category Image" class="img" />
             <div class="job-category__text">
@@ -256,8 +294,8 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-job-category">
-        <span>See more</span>
+      <button id="btn-job-category" class="btn btn-job-category">
+        <span id="btn-job-category-text">See more</span>
       </button>
     </section>
 
@@ -277,7 +315,7 @@
             </p>
             <div class="social-date">
               <div class="news__social">
-                <a href="" target="_blank" class="social-button btn-fb">
+                <a href="https://www.facebook.com/" target="_blank" class="social-button btn-fb">
                   <span></span>
                 </a>
                 <a href="" target="_blank" class="social-button btn-tw">
@@ -309,7 +347,7 @@
             </p>
             <div class="social-date">
               <div class="news__social">
-                <a href="" target="_blank" class="social-button btn-fb">
+                <a href="https://www.facebook.com/" target="_blank" class="social-button btn-fb">
                   <span></span>
                 </a>
                 <a href="" target="_blank" class="social-button btn-tw">
@@ -339,7 +377,7 @@
             </p>
             <div class="social-date">
               <div class="news__social">
-                <a href="" target="_blank" class="social-button btn-fb">
+                <a href="https://www.facebook.com/" target="_blank" class="social-button btn-fb">
                   <span></span>
                 </a>
                 <a href="" target="_blank" class="social-button btn-tw">
@@ -369,7 +407,7 @@
             </p>
             <div class="social-date">
               <div class="news__social">
-                <a href="" target="_blank" class="social-button btn-fb">
+                <a href="https://www.facebook.com/" target="_blank" class="social-button btn-fb">
                   <span></span>
                 </a>
                 <a href="" target="_blank" class="social-button btn-tw">
@@ -469,7 +507,6 @@
 
   <footer class="footer">
     <div class="footer__mainInfo">
-
       <div class="footer__contact">
         <h4 class="logo footer__logo">JobConnect</h4>
         <p>27, Promenade des Anglais</p>
@@ -503,10 +540,13 @@
     <div><span></span></div>
     <div class="footer__copyright">
       <p>
-        Done by Volodymyr Yemelyanov for "Conception d'un site web mobile" courses. Copyright &copy; 2020 by V.Y.
+        Done by Volodymyr Yemelyanov for "Conception d'un site web mobile"
+        courses. Copyright &copy; 2020 by V.Y.
       </p>
     </div>
   </footer>
+
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>
