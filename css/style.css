@@ -302,9 +302,15 @@ section {
   padding: 60px 0;
   background-color: #333;
   color: #ffffff; }
-  .footer__mainInfo {
+  .footer-section {
     max-width: 1200px;
     padding: 0 15px 30px;
+    margin: 0 auto; }
+  .footer h3 {
+    margin-bottom: 8px; }
+  .footer p {
+    line-height: 1.4; }
+  .footer__mainInfo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px; }
@@ -314,6 +320,20 @@ section {
   @media (max-width: 768px) {
     .footer__faq {
       display: none; } }
+  .footer .separator {
+    max-width: 534px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto; }
+    .footer .separator span {
+      display: block;
+      border: 1px solid;
+      width: 100%; }
+  .footer__copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 15px 0; }
 
 @media (max-width: 1024px) {
   .section-news {
@@ -918,6 +938,10 @@ section {
 .hide-popUp {
   display: none; }
 
+.section-creators,
+.section-location {
+  background-color: #f7f7f7; }
+
 .creators {
   display: flex;
   flex-wrap: wrap;
@@ -939,6 +963,13 @@ section {
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); }
+  .creator__back {
+    background-image: linear-gradient(135deg, #ffb900, #ff7730);
+    transform: rotateY(180deg); }
+  .creator:hover .creator__front {
+    transform: rotateY(-180deg); }
+  .creator:hover .creator__back {
+    transform: rotateY(0); }
 
 .u-center-text {
   text-align: center; }
