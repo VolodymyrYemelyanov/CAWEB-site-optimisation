@@ -149,7 +149,9 @@ section {
     .navigation .logo a {
       color: #ffffff;
       text-decoration: none;
-      transition: all 0.4s; }
+      transition: all 0.4s;
+      display: flex;
+      flex-wrap: wrap; }
       .navigation .logo a:hover {
         color: rgba(255, 255, 255, 0.75); }
   .navigation__nav {
@@ -803,7 +805,7 @@ section {
 
 .popUp {
   position: relative;
-  z-index: 999; }
+  z-index: 99999; }
   .popUp__overlay {
     position: fixed;
     top: 0;
@@ -815,7 +817,9 @@ section {
     justify-content: center;
     align-items: center; }
   .popUp__window {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 5px;
     background-color: #ffffff;
     border-radius: 4px; }
   .popUp__header {
@@ -837,14 +841,24 @@ section {
     padding: 10px 10px;
     display: flex;
     flex-wrap: wrap; }
-  .popUp .social-button-wrap {
-    text-align: center;
+  .popUp .social-button-wrap,
+  .popUp .popUp-form {
     width: 50%; }
+    @media (max-width: 480px) {
+      .popUp .social-button-wrap,
+      .popUp .popUp-form {
+        width: 100%; } }
+    .popUp .social-button-wrap h3,
+    .popUp .popUp-form h3 {
+      text-align: center; }
   .popUp__btn {
     position: relative;
-    display: inline-block;
-    width: 90%;
-    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 95%;
+    padding: 0 7px;
     text-align: center;
     border: 5px solid;
     border-radius: 4px;
@@ -876,11 +890,24 @@ section {
     color: #332c2c; }
     .popUp__btn-mail:hover {
       border-color: #332c2c; }
-  .popUp .form {
-    width: 50%;
-    text-align: center; }
-    .popUp .form h3 {
-      width: 100%; }
+  .popUp .popUp-form h3 {
+    width: 100%; }
+    @media (max-width: 480px) {
+      .popUp .popUp-form h3 {
+        margin-top: 30px; } }
+  .popUp .popUp-form .form__group {
+    width: 100%;
+    margin-bottom: 10px; }
+  .popUp .popUp-form .form__input {
+    background-color: #eee;
+    border-bottom: 3px solid transparent;
+    height: 50px;
+    border-radius: 4px; }
+    .popUp .popUp-form .form__input:focus {
+      box-shadow: none;
+      border-bottom: 3px solid #55c57a; }
+    .popUp .popUp-form .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
   .popUp__footer {
     border-top: 1px solid #eee;
     padding: 10px 10px;
@@ -903,7 +930,6 @@ section {
   .creator__side {
     height: 520px;
     transition: all .8s;
-    font-size: 60px;
     position: absolute;
     top: 0;
     left: 0;
